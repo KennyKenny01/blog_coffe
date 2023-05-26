@@ -69,7 +69,7 @@ img{
 
 .header{
     background-image: url(../img/banner.jpg);
-    height: 20rem;
+    height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -79,4 +79,38 @@ img{
     text-align: center;
     color: var(--blanco);
     margin-top: 5rem;
+}
+@Media (min-width: 768px) {
+    .header__texto{
+        margin-top: 15rem;
+    }
+}
+@Media (min-width: 768px) {
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo{
+color: var(--blanco);
+}
+.logo__nombre {
+font-weight: 400;
+}
+.logo__bold {
+font-weight: 700;
+}
+@Media (min-width: 768px) {
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+}
+.navegacion__enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
 }
