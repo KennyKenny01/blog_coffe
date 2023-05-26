@@ -1,0 +1,7 @@
+/**Lo de abajo es un sniper para no sumar los px de height con el padding*/
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
