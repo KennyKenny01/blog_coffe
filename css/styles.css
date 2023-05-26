@@ -64,3 +64,12 @@ img{
 .central-texto {
     text-align: center;
 }
+
+/* Header */
+
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 20rem;
+    background: no-repeat;
+    background-position: center center;
+}
