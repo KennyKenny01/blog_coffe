@@ -2,6 +2,7 @@
     --fuenteHeading: 'PT Sans' , sans-serif;
     --fuenteParrafos: 'Open Sans' , sans-serif;
     --primario: #784D3C;
+    --claro: #e1e1e1;
     --blanco: #ffffff;
     --negro: #000000;
   }
@@ -113,4 +114,42 @@ font-weight: 700;
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
+}
+@Media (min-width: 768px) {
+    .contenido-inicial{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entrada {
+    border-bottom: 1px solid var(--claro);
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.boton{
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+@Media (min-width: 768px) {
+    .boton{
+        display: inline-block;
+    }
+}
+
+.boton--primario{
+    background-color: var(--negro);
 }
