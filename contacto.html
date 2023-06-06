@@ -34,18 +34,25 @@
     </header>
     <main class="contenedor">
         <h3 class="central-texto">Contacto</h3>
-        <div class="contacto-bg">
+        <div class="contacto-bg"></div>
             <form class="formulario">
                 <div class="campo">
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Tu Nombre">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Tu Nombre" id="nombre">
+                </div>
+                <div class="campo">
+                    <label for="email">Correo</label>
+                    <input type="email" placeholder="Tu Correo" id="email">
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje"></textarea>
+                </div>
+                <div class="campo">
+                    <input type="submit" value="Enviar" class="boton boton--primario">
                 </div>
             </form>
-
-        </div>
     </main>
-
-
     <footer class="footer">
         <div class="contenedor">
             <div class="barra">
