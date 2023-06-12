@@ -37,19 +37,30 @@
         <div class="contacto-bg"></div>
             <form class="formulario">
                 <div class="campo">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" placeholder="Tu Nombre" id="nombre">
+                    <label class="campo__label" for="nombre">Nombre</label>
+                    <input class="campo__field"
+                    type="text" 
+                    placeholder="Tu Nombre" 
+                    id="nombre">
                 </div>
                 <div class="campo">
-                    <label for="email">Correo</label>
-                    <input type="email" placeholder="Tu Correo" id="email">
+                    <label class="campo__label" for="email">Correo</label>
+                    <input class="campo__field"
+                    type="email"
+                    placeholder="Tu Correo" 
+                    id="email">
                 </div>
                 <div class="campo">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje"></textarea>
+                    <label class="campo__label" for="mensaje">Mensaje</label>
+                        <textarea class="campo__field campo__field--textarea" 
+                            id="mensaje">
+                        </textarea>
                 </div>
                 <div class="campo">
-                    <input type="submit" value="Enviar" class="boton boton--primario">
+                    <input
+                    type="submit"
+                    value="Enviar"
+                    class="boton boton--primario">
                 </div>
             </form>
     </main>
