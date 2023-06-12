@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog De Cafe</title>
+    <!--Prefetch para que la carga de curso.html se haga desde el index-->
+    <link rel="prefetch" href="cursos.html" as="document">
+    <!---Preload-->
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/styles.css" as="style">
     <link href="css/styles.css" rel="stylesheet" >
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" crossorigin="croddorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -38,7 +44,10 @@
             <h3>Nuestro Blog</h3>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog1.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+                    </picture>
                     <div class="entrada__contenido">
                         <h4 class="no-margin">Tipos de Granos de café</h4>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti expedita deserunt ducimus laborum corrupti vel dolores facere omnis neque hic recusandae sunt ratione quos quia quasi, architecto voluptas nihil!</p>
@@ -49,7 +58,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                    </picture>
                     <div class="entrada__contenido">
                         <h4 class="no-margin">3 Deliciosas recetas de Café</h4>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti expedita deserunt ducimus laborum corrupti vel dolores facere omnis neque hic recusandae sunt ratione quos quia quasi, architecto voluptas nihil!</p>
@@ -59,7 +71,10 @@
             </article>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog3.jpg" alt="imagen blog">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+                    </picture>
                     <div class="entrada__contenido">
                         <h4 class="no-margin">Beneficios del café</h4>
                         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti expedita deserunt ducimus laborum corrupti vel dolores facere omnis neque hic recusandae sunt ratione quos quia quasi, architecto voluptas nihil!</p>
@@ -108,7 +123,7 @@
                     <a href="cursos.html" class="navegacion__enlace">Cursos</a>
                     <a href="contactos.html" class="navegacion__enlace">Contactos</a>
         </div>
-
+        <script src="js/modernizr.js"></script>
     </footer>
 </body>
 </html>
